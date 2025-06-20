@@ -34,6 +34,7 @@ If your controller name doesn’t include this keyword, the game will treat it a
 cd /Users/Shared/
 curl -LO https://github.com/AlvinHV/Overcooked2DS4BT/releases/download/v1.0.0/Overcooked2Mod.zip
 unzip Overcooked2Mod.zip
+rm Overcooked2Mod.zip
 ```
 
 ### 2. Set Steam Launch Options
