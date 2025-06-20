@@ -32,7 +32,7 @@ If your controller name doesn’t include this keyword, the game will treat it a
 
 ```bash
 cd /Users/Shared/
-curl -LO https://path/to/Overcooked2DS4BT.zip
+curl -LO https://github.com/AlvinHV/Overcooked2DS4BT/releases/download/v1.0.0/Overcooked2Mod.zip
 unzip Overcooked2DS4BT.zip
 ```
 
