@@ -1,11 +1,10 @@
-# 🎮 Overcooked 2 — DualShock 4 Bluetooth Fix
+# Overcooked 2 — DualShock 4 Bluetooth Fix
 
 A BepInEx-based mod that fixes **DualShock 4 Bluetooth controller detection** in *Overcooked 2* on macOS.
-ReadMe may seem like an "AI Slop" since i asked chatGPT to write it but code has been tested and run by real person
 
 ---
 
-## ✅ What This Fixes
+## Fixes
 
 By default, *Overcooked 2* does **not recognize DualShock 4 controllers over Bluetooth**, due to how the game’s input system (using [InControl](https://github.com/pbhogan/InControl)) identifies controllers **only by Bluetooth device name** — not by vendor or product ID.
 
@@ -13,9 +12,7 @@ This mod forces the game to recognize DualShock controllers even over Bluetooth 
 
 ---
 
-## ⚠️ Important: Controller Name Must Include `"DUALSHOCK"`
-
-To ensure detection:
+## Important: Controller Name Must Include `"DUALSHOCK"`
 
 1. Open **System Preferences → Bluetooth**
 2. Rename your controller to include `DUALSHOCK` (case-insensitive)
@@ -26,9 +23,9 @@ If your controller name doesn’t include this keyword, the game will treat it a
 
 ---
 
-## 🛠 Installation
+## Installation
 
-### 1. Install the Mod
+### 1. Install the mod using this command
 
 ```bash
 cd /Users/Shared/
@@ -50,13 +47,13 @@ In Steam:
 
 ---
 
-## 🐞 Known Issues
+## Known Issues
 
 * **D-Pad is not working properly.**
 
 ---
 
-## 🔍 Development Notes
+## Development Notes
 
 Originally suspected Unity’s IOKit-based input system was the issue. After reverse engineering (including hooking C++ functions and IOKit exports), I confirmed that:
 
